@@ -15,12 +15,14 @@ const AppRouter = () => {
         <Router>
             <div>
                 <NavBar />
+                <div className="container">
                 <Routes>
                     <Route path="/" element={<HomeScreen />} />
                     <Route path="/about" element={<AboutScreen />} />
                     <Route path="/login" element={<LoginScreen />} />
                     <Route path="*" element={<Navigate replace to="/" />} />
                 </Routes>
+                </div>
             </div>
         </Router>
     )
